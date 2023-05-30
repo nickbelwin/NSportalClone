@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton School</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        .header{
+            background-color: rgb(255, 255, 255);
+            border: .0625rem rgb(222, 219, 219) solid;
+            padding: .0625rem 1.875rem;
+            height: 3.4375rem;
+            display: flex;
+            align-items: center;
+        }
+        .header .items2{
+            justify-content: end;
+        }
+        
+        .header img{
+            border: none;
+            width: 9.0625rem;
+            height: 2rem;
+            /* margin-bottom: .0625rem; */
+
+        }
+        .items2{
+            display: flex;
+            justify-items: end;
+            flex-direction: row;
+            align-items: center;
+            column-gap: .75rem;
+            width: 100%;
+            font-size: .875rem;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            
+        }
+        .space{
+            padding: 0 .625rem;
+            
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(87, 86, 86);
+            background-color: white;
+            padding: 0rem;
+            
+        }
+        .rocket{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(87, 86, 86);
+            background-color: white;
+            padding: .75rem .75rem;
+            border-radius: .625rem;
+        }
+        .rocket:hover{
+            background-color: rgb(238, 238, 252);
+        }
+        .button img{
+            width: 1.25rem;
+            border: .0625rem rgb(227, 226, 226) solid;
+            padding: .125rem .5rem;
+            /* width: .625rem; */
+
+            border-radius: .4375rem;
+        }
+        .profile{
+            background-color: rgb(85, 56, 2);
+            color: white;
+            padding: 0;
+            padding: .4375rem;
+            border: none;
+            border-radius: 1.125rem;
+        }
+        .sb{
+            width: 7rem;
+            padding: .5rem 0rem;
+            padding-left: .3125rem;
+            border-radius: .625rem;
+            margin-left: .1875rem;
+        }
+        .sb:hover{
+            background-color: rgb(238, 238, 252);
+        }
+        .sb select:hover{
+            background-color: rgb(238, 238, 252);
+        }
+        .sb select{
+            border: none;
+            
+        }
+        .line{
+            border: .0625rem rgb(215, 211, 211) solid;
+            height: 2.1875rem;
+            margin-left: .3125rem;
+        }
+        .div1{
+            background-color: rgb(252, 246, 232);
+            height: 22.375rem;
+        }
+        .div1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .div11{
+            margin-left: 6.25rem;
+            margin-right: 6.25rem;
+            display: flex; 
+            flex-direction: column;
+            row-gap: .625rem;
+            width: 31.25rem;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            
+        }
+        .career{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 28.125rem;
+            font-size: 2.5rem;
+        }
+        .careerimg img{
+            width: 23.75rem;
+            height: 17.5rem;
+            margin-left: .0625rem;           
+        }
+        .pics{
+            display: flex;
+            align-items: center;
+        }
+        .pics img{
+            width: 1.25rem;
+            border-radius: 50%;
+        }
+        .pics span{
+            margin-left: .625rem;
+        }
+        .enroll{
+            background-color: rgb(60, 57, 254);
+            border: .1875rem rgb(154, 216, 255) solid;
+            width: 6.25rem;
+            padding: .5rem .9375rem;
+            border-radius: .75rem;
+            margin: 0;
+        }
+        .enroll a{
+            text-decoration: none;
+            color: white;           
+        }
+        .div2{
+            font-size: 1.5625rem;
+            font-weight: 600;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            margin-left: 9.625rem;
+            margin-top: 3.125rem;
+        }
+        .div21{
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            margin-left: 9.625rem;
+            color: grey;
+            font-size: .875rem;
+        }
+        .div3{
+            display: flex;
+            margin-top: 1.875rem;
+            margin-left: 5.625rem;
+            margin-right: 5.625rem;
+            margin-bottom: 12.5rem;
+            justify-content: center;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 1.25rem;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            background-color: rgb(36, 35, 35);
+            padding: .9375rem;
+            width: 17.875rem;
+            height: 23.125rem;
+            color: rgb(255, 255, 255);
+            border-radius: .75rem;
+            margin-right: 3.125rem;
+            
+        }
+        .card1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 1.25rem;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            background-color: rgb(255, 255, 255);
+            border: .125rem black solid;
+            padding: .9375rem;
+            width: 17.875rem;
+            height: 23.125rem;
+            color: rgb(0, 0, 0);
+            border-radius: .75rem;
+            margin-right: 3.125rem;
+        }
+        .card1 div{
+            font-size: .75rem;
+            color: grey;
+        }
+        .card1 input{
+            width: 4.375rem;
+            background-color: rgb(255, 190, 70);
+            color: white;
+            border-radius: .3125rem;
+        }
+        .card div{
+            font-size: .75rem;
+            color: grey;
+        }
+        .card input{
+            width: 4.375rem;
+            background-color: rgb(255, 190, 70);
+            color: white;
+            border-radius: .3125rem;
+        }
+        .card button{
+            background-color: rgb(41, 41, 253);
+            color: white;
+            border-radius: .3125rem;
+            padding: .625rem;
+            border: none;
+        }
+        .card1 button{
+            background-color: rgb(41, 41, 253);
+            color: white;
+            border-radius: .3125rem;
+            padding: .625rem;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <header class="header">
+            <div class="items">
+                <img src="/image/nsLogo.svg" alt="Newton Logo"> 
+            </div>
+            <div class="items2">
+                <a class="rocket" href="https://my.newtonschool.co/refer">Refer a friend <span role="img" aria-label="Rocket">🚀</span></a>
+                <div class="space"> <div class="line"></div> </div>
+                <a href="https://my.newtonschool.co/feed" class="button"><img src="/image/social.svg" alt="feed"></a>
+                <span class="button"><img src="/image/bell.svg" alt="notification"></span>
+                <div class="sb" ><input class="profile" type="button" value="SB"> <select>
+                    <option>Sarvesh</option>
+                    <option> Profile</option>
+                </select></div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section>
+        <div class="div1">
+            <div class="div11">
+            <div class="career">
+                Start your career in Data Science.
+            </div>
+            <div>
+                Earn a certification in Data Science with Newton School's Data Science course. Application Closes soon.
+            </div>
+            <span class="enroll">
+                <a href="https://my.newtonschool.co/apply_form/tlgbpyu5zpou/">Enroll Now  ></a>
+            </span>
+            <span class="pics">
+                <img src="/image/twitter.png" alt="">
+                <img src="/image/Facebook.png" alt="">
+            <img src="/image/jioCinema.png" alt="">
+            <span>5000+ people have applied already</span>
+            </span>
+        </div>
+        <div class="careerimg">
+            <img src="/image/career.png" alt="">
+        </div>
+        </div>
+        <div class="div2">
+            Your Courses
+        </div>
+        <div class="div21">
+            Pick up from where you left off
+        </div>
+        <div class="div3">
+            <div class="card">
+                <img src="/image/fullstack.png" alt="">
+                <p>Profesional Full Stack Devolepment - June 2022</p>
+                <div>
+                    <p>Started From</p>
+                    <p>23 May 2022,3:58pm</p>
+                    </div>
+                <input type="button" value="Instructor">
+                <button>
+                    Enroll Now
+                </button>
+                
+            </div>
+            <div class="card1" >
+                <img src="/image/fullstack.png" alt="">
+                <p>Profesional Full Stack Devolepment - June 2022</p>
+                <div>
+                <p>Started From</p>
+                <p>23 May 2022,3:58pm</p>
+                </div>
+                <input type="button" value="Instructor">
+                <button>
+                    Enroll Now  
+                </button>
+            </div>
+            <div class="card">
+                <img src="/image/fullstack.png" alt="">
+                <p>Profesional Full Stack Devolepment - June 2022</p>
+                <div>
+                    <p>Started From</p>
+                    <p>23 May 2022,3:58pm</p>
+                    </div>
+                <input type="button" value="Instructor">
+                <button>
+                    Enroll Now
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
